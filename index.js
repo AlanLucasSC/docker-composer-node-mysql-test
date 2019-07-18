@@ -6,7 +6,12 @@ var con = mysql.createConnection({
   password: ""
 });
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
+
+console.log('BATATA')
+
+setTimeout(() => {
+	con.connect(function(err) {
+	  if (err) throw err;
+	  console.log("Connected!");
+	});
+}, 10000)
