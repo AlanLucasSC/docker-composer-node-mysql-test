@@ -4,11 +4,11 @@ services:
         image: alanlucassc/node-mysql
         container_name: app
         depends_on:
-          - db
+            - db
     db:
-		image: mysql
-		container_name: db
-		environment:
-		  - MYSQL_USER=root
-		  - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-		  - MYSQL_DATABASE=loja
+        image: mysql
+        container_name: db
+        environment:
+            - MYSQL_USER=root
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_DATABASE=loja
